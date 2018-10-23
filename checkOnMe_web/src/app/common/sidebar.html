@@ -1,0 +1,54 @@
+<script src="assets/common-scripts.js"></script>
+
+<aside>
+    <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+           <p class="centered">
+                <a href="profile.html"><img src="assets/img/ui-sherman.jpg" class="img-circle" width="60"></a>
+            </p>
+            <h5 class="centered">{{$ctrl.userv.user.email}}</h5>
+                <li class="sub-menu">
+                    <a class="active" ui-sref="dashboard">
+                        <i class="fa fa-dashboard"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="sub-menu">
+                    <a ui-sref="message">
+                        <i class="fa fa-inbox"></i>
+                        <span>Messages</span>
+                     </a>
+                </li>
+                <li class="sub-menu">
+                    <a ui-sref="viewroutes">
+                        <i class="glyphicon glyphicon-map-marker"></i>
+                        <span>Routing</span>
+                    </a>
+                </li>
+                <li class="sub-menu">
+                    <a ui-sref="usermanage">
+                        <i class="fa fa-user"></i>
+                        <span>Manage Users</span>
+                    </a>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="fa fa-mobile"></i>
+                        <span>Mobile Users</span>
+                    </a>
+                    <!--<ul class="sub">
+                        <li><a href="form_component.html">View</a></li>
+                        <li><a href="form_component.html">Update</a></li>
+                    </ul>-->
+                </li>
+                <li class="sub-menu">
+                    <a ui-sref="appreisal">
+                        <i class="fa fa-user"></i>
+                        <span>appreisal</span>
+                    </a>
+                </li>
+         </ul>
+        <!-- sidebar menu end-->
+    </div>
+</aside>

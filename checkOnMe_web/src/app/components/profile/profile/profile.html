@@ -1,0 +1,50 @@
+
+ <div class="col-lg-12 main-chart">
+    <h1 class="page-title">profile list</h1>
+        <div class="alert alert-success" id="infoeditsuccess" hidden>  
+          <strong class="glyphicon glyphicon-ok">Edited Successfully</strong> 
+        </div>
+        <div class="alert alert-danger" id="infoeditfail" hidden>   
+          <strong class="glyphicon glyphicon-remove">Operation Failed</strong> 
+        </div>
+                    
+            
+      <div class="panel-body">
+            <!--<button class="glyphicon glyphicon-plus" ng-click="$ctrl.createprofile('md')"></button>-->
+              
+                  <table class="table table-striped" datatable="ng">
+                    <span us-spinner="{radius:20, width:8, length:8}"></span>
+
+                      <thead>
+                        <tr>
+                         <td>first_name</td>
+                          <td>last</td>
+                          <td>city</td>
+                          <td>country</td>
+                          <td>gender</td>
+                          <td>bio</td>
+                          <td>option</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr ng-repeat="profile in $ctrl.profiles">
+                          <td>{{profile.first_name}}</td>
+                          <td>{{profile.last_name}}</td>
+                          <td>{{profile.city}}</td>
+                          <td>{{profile.country}}</td>
+                          <td>{{profile.gender}}</td>
+                          <td>{{profile.bio}}</td>
+                          <td>
+                              <button class="btn btn-info glyphicon glyphicon-eye-open" ng-click="$ctrl.view('md',profile)"></button>
+                              <button class="btn btn-primary glyphicon glyphicon-edit" ng-click="$ctrl.edit('md',profile)"></button>
+                              <!--<button class="btn btn-danger glyphicon glyphicon-trash" ng-click="$ctrl.delete('md',profile)"></button>-->
+                          </td>
+                        </tr>
+                        
+                      </tbody>
+
+                </table>
+            </div>
+       </div>
+</div>
+

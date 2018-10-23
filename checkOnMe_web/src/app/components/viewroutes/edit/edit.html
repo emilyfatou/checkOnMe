@@ -1,0 +1,31 @@
+<div class="modal-header">
+    <h3 class="modal-title" id="modal-title">Edit User</h3>
+</div>
+<div class="modal-body" id="modal-body">
+    <form name="userEditForm">
+        <div class="form-group">
+            <label for="UserId">ID</label>
+            <input type="text" class="form-control" id="userId" placeholder="UserId" ng-model="$ctrl.user.BaseUser.UserId}">
+        </div>
+        <div class="form-group">
+             <label for="UserName">User Name</label>
+            <input type="text" class="form-control" id="UserName" placeholder="Your Name" ng-model="$ctrl.user.BaseUser.UserName">
+        </div>
+        <div class="form-group">
+            <label for="UserEmail">Email</label>
+            <input type="text" class="form-control" id="UserEmail" placeholder="UserEmail" ng-model="$ctrl.user.BaseUser.UserEmail">
+        </div>
+        <div class="form-group">
+            <label for="UserFullName">Full Name</label>
+            <input type="text" class="form-control" id="UserFullName" placeholder="UserFullName" ng-model="$ctrl.user.BaseUser.UserFullName">
+        </div>
+        <div class="form-group">
+            <label for="UserMobile">Phone #</label>
+            <input type="text" class="form-control" id="UserMobile" placeholder="UserMobile" ng-model="$ctrl.user.BaseUser.UserMobile">
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">OK</button>
+    <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+</div>

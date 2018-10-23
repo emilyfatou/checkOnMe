@@ -1,0 +1,22 @@
+    <section class="suite">
+      <h1>User Endpoint</h1>
+      <dl>
+        <section class="suite">
+          <h1>#Customer POST /users/signup</h1>
+          <dl>
+            <dt>should create a new customer user</dt>
+            <dd><pre><code>request(app)
+        .post('/users/signup')
+        .set('Content-Type', 'application/json')
+        .send(credentials)
+        .end(function (err, res) {
+          if(err) {
+            return done(err);
+          }
+          // Assetion Tests on request body
+          done();
+        });</code></pre></dd>
+          </dl>
+        </section>
+      </dl>
+    </section>

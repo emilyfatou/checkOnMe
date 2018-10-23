@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/profile_panel"
+        android:layout_width="match_parent"
+        android:background="@color/colorDarkGrey"
+        android:layout_height="240dp">
+
+        <ImageView
+            android:id="@+id/edit_icon"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_mode_edit_white"
+            android:layout_margin="12dp"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="100dp"
+            android:layout_marginTop="24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@drawable/drawer_profile_image_background"
+            android:padding="2dp"
+            android:layout_height="128dp" />
+        <TextView
+            android:id="@+id/full_name"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Full Name"
+            android:textColor="@color/colorWhite"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_below="@+id/profile_pic"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@+id/profile_panel"
+        android:layout_width="match_parent"
+        android:background="@color/colorSecondBackground"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/menu_item_home"
+            android:layout_marginTop="10dp"
+            android:text="Home"
+            android:drawableLeft="@drawable/ic_home_black"
+            android:drawablePadding="40dp"
+            style="@style/NavMenuItems" />
+        <TextView
+            android:id="@+id/menu_item_profile"
+            android:text="Profile"
+            android:drawableLeft="@drawable/ic_person_black"
+            android:drawablePadding="40dp"
+            style="@style/NavMenuItems" />
+        <TextView
+            android:id="@+id/menu_item_contact"
+            android:text="Contacts"
+            android:drawableLeft="@drawable/ic_contact_phone"
+            android:drawablePadding="40dp"
+            style="@style/NavMenuItems" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorBlack"
+            android:layout_height="1dp" />
+        <TextView
+            android:id="@+id/menu_item_messages"
+            android:text="Messages"
+            android:drawableLeft="@drawable/ic_mail_black"
+            android:drawablePadding="40dp"
+            style="@style/NavMenuItems" />
+        <TextView
+            android:id="@+id/menu_item_change_password"
+            android:text="Change Password"
+            android:drawableLeft="@drawable/ic_lock_black"
+            android:drawablePadding="40dp"
+            style="@style/NavMenuItems" />
+        <TextView
+            android:id="@+id/menu_item_logout"
+            android:text="Logout"
+            android:drawableLeft="@drawable/ic_exit"
+            android:drawablePadding="40dp"
+            style="@style/NavMenuItems" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<resources>
+
+    <string name="app_name">CheckOnMe</string>
+    <string name="copyright">&#169; CheckOnMe. All rights reserved</string>
+    <string name="email">Email address</string>
+    <string name="password">Password</string>
+    <string name="service_not_available">No geocoder available - The background geocoding service is not available due to a network error or IO exception.</string>
+    <string name="invalid_lat_long_used">Invalid latitude or longitude used – The latitude and/or longitude values that are provided in the Location object are invalid.</string>
+    <string name="no_address_found">Sorry, no address found – The geocoder can not find an address for the given latitude/longitude.</string>
+    <string name="address_found">An address corresponding to the geo-location has been found.</string>
+    <string name="password_reset_email">Enter your email address and we will send you a link to reset your password</string>
+    <string name="password_reset_sms">Enter the phone number you registered with and we will send you a code to reset your password</string>
+
+    <string-array name="message_type">
+        <item>Message Recipient</item>
+        <item>Emergency Responders</item>
+        <item>Emergency Contacts</item>
+        <item>Both</item>
+    </string-array>
+
+    <string-array name="relationship">
+        <item>Relationship</item>
+        <item>Parent</item>
+        <item>Spouse</item>
+        <item>Sibling</item>
+        <item>Colleague</item>
+        <item>Manager</item>
+        <item>Clergy</item>
+        <item>Neighbour</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="head_problems">
+        <item>Brain Problem</item>
+        <item>Black Eye</item>
+        <item>Headache</item>
+        <item>Dental Problem</item>
+        <item>Bleeding</item>
+    </string-array>
+
+    <string-array name="neck_problems">
+        <item>Neck stiffness</item>
+        <item>Spasm</item>
+        <item>Bleeding</item>
+        <item>Thyroid Disease</item>
+        <item>Paralysis</item>
+    </string-array>
+
+    <string-array name="shoulder_problems">
+        <item>Dislocated Shoulder</item>
+        <item>Pain</item>
+        <item>Separated Shoulder</item>
+        <item>Strain</item>
+        <item>Sprain</item>
+    </string-array>
+
+    <string-array name="arm_problems">
+        <item>Burn</item>
+        <item>Spasm</item>
+        <item>Bone Fracture</item>
+        <item>Sprain</item>
+        <item>Paralysis</item>
+    </string-array>
+
+    <string-array name="hand_problems">
+        <item>Blister</item>
+        <item>Bone Fracture</item>
+        <item>Burn</item>
+        <item>Paralysis</item>
+        <item>Contracture</item>
+    </string-array>
+
+    <string-array name="chest_problems">
+        <item>Heart Burn</item>
+        <item>Asthma</item>
+        <item>Shortness of breath</item>
+        <item>Rib Fracture</item>
+    </string-array>
+
+    <string-array name="stomach_problems">
+        <item>Diarrhea</item>
+        <item>Abdominal Pain</item>
+        <item>Constipation</item>
+        <item>Hernia</item>
+        <item>Appendicitis</item>
+    </string-array>
+
+    <string-array name="leg_problems">
+        <item>Paralysis</item>
+        <item>Bone Fracture</item>
+        <item>Sprain</item>
+        <item>Injury</item>
+    </string-array>
+
+    <string-array name="foot_problems">
+        <item>Blister</item>
+        <item>Bone Fracture</item>
+        <item>Sprained ankle</item>
+        <item>Burn</item>
+    </string-array>
+
+</resources>

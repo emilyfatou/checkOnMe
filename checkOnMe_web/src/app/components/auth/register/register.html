@@ -1,0 +1,24 @@
+<div ng-controller="RegisterController" layout="column" ng-cloak>
+    <div class="logincontainer">
+        <div id="login">
+            <div id="infosuccess" hidden>
+              <span class="label label-success"> Successfully</span>
+             </div>
+             <div id="infofail" hidden>
+               <span class="label label-warning"> Please Fill Out The Form Again!!!</span>
+             </div>
+            <form name="projectForm">
+                <fieldset class="clearfix">
+                   <p><span><md-icon md-menu-origin class="material-icons">account_circle</md-icon></span><input required type="text" name="first_name" ng-model="$ctrl.first_name" placeholder="first_name"></p>
+                   <p><span><md-icon md-menu-origin class="material-icons">account_circle</md-icon></span><input required type="text" name="last_name" ng-model="$ctrl.last_name" placeholder="last_name"></p>
+                   <p><span><md-icon md-menu-origin class="material-icons">account_circle</md-icon></span><input required type="text" name="email" ng-model="$ctrl.email" placeholder="email"></p>
+                   <p><span><md-icon md-menu-origin class="material-icons">lock_outline</md-icon></span><input required type="password" type="password" name="pasword" ng-model="$ctrl.password" placeholder="Password">
+                   <p><span><md-icon md-menu-origin class="material-icons">lock_outline</md-icon></span><input required type="password" type="password" name="confpasword" ng-model="$ctrl.confpassword" placeholder="Confirm Password">
+                   <p><span><md-icon md-menu-origin class="material-icons">account_circle</md-icon></span><input required type="text" name="phone_number" ng-model="$ctrl.phone_number" placeholder="Phone Number"></p>
+                   <p><button id="buttonlogin" type="button" ng-click="$ctrl.register()" ng-disabled="projectForm.$invalid" class="btn btn-primary btn-lg">Sign Up</button></p>
+                 </fieldset>
+              </form>
+            <p>Already a member? <a ui-sref="auth.login" class="blue">Log In</a><span class="fontawesome-arrow-right"></span></p>
+        </div>
+    </div>
+</div>

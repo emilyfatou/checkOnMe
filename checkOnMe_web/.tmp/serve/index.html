@@ -1,0 +1,178 @@
+<!doctype html>
+<html class="no-js" lang="" ng-app="mainApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Check On Me</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/json-schema-faker/0.3.1/json-schema-faker.min.js"></script>
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!--external css-->
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <!--<link rel="stylesheet" type="text/css" href="assets/css/zabuto_calendar.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/gritter/css/jquery.gritter.css" />
+    <link rel="stylesheet" type="text/css" href="assets/lineicons/style.css">    -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <script src="assets/js/bootstrap.min.js"></script> -->
+    <!--<script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>-->
+ <!--common script for all pages-->
+    <!--<script src="assets/js/common-scripts.js"></script>-->
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style-responsive.css" rel="stylesheet">
+    <script class="include" type="text/javascript" src="assets/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="assets/common-scripts.js"></script>
+    <script src="assets/Chart.js"></script>
+    <script src="constant.js"></script>
+    <!--
+    <script src="assets/js/chart-master/Chart.js"></script>-->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <!--<script type="text/javascript" src="node_modules/faker/build/build/faker.js"></script>-->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/angular-toastr/dist/angular-toastr.css" />
+    <link rel="stylesheet" href="../bower_components/animate.css/animate.css" />
+    <link rel="stylesheet" href="../bower_components/angular-datatables/dist/css/angular-datatables.css" />
+    <link rel="stylesheet" href="../bower_components/angular-datatables/dist/plugins/bootstrap/datatables.bootstrap.min.css" />
+    <link rel="stylesheet" href="../bower_components/angular-material/angular-material.css" />
+    <link rel="stylesheet" href="../bower_components/nvd3/build/nv.d3.css" />
+    <link rel="stylesheet" href="../bower_components/angular-hamburger-toggle/dist/angular-hamburger-toggle.css" />
+    <link rel="stylesheet" href="../bower_components/leaflet/dist/leaflet.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp/serve,src}) styles/app.css -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="app/index.css">
+    <!-- endinject -->
+    <!-- endbuild -->
+    <!--<script src="bower_components/angular/angular.js"></script>-->
+</head>
+
+<body>
+    <app></app>
+</body>
+<!-- build:js(src) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="../bower_components/zepto/zepto.js"></script>
+<script src="../bower_components/lodash/lodash.js"></script>
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/restangular/dist/restangular.js"></script>
+<script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="../bower_components/malarkey/dist/malarkey.min.js"></script>
+<script src="../bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+<script src="../bower_components/moment/moment.js"></script>
+<script src="../bower_components/angular-jsf/angular-jsf.js"></script>
+<script src="../bower_components/angular-datatables/dist/angular-datatables.js"></script>
+<script src="../bower_components/angular-datatables/dist/plugins/bootstrap/angular-datatables.bootstrap.js"></script>
+<script src="../bower_components/angular-datatables/dist/plugins/colreorder/angular-datatables.colreorder.js"></script>
+<script src="../bower_components/angular-datatables/dist/plugins/columnfilter/angular-datatables.columnfilter.js"></script>
+<script src="../bower_components/angular-datatables/dist/plugins/light-columnfilter/angular-datatables.light-columnfilter.js"></script>
+<script src="../bower_components/angular-datatables/dist/plugins/colvis/angular-datatables.colvis.js"></script>
+<script src="../bower_components/angular-datatables/dist/plugins/fixedcolumns/angular-datatables.fixedcolumns.js"></script>
+<script src="../bower_components/angular-datatables/dist/plugins/fixedheader/angular-datatables.fixedheader.js"></script>
+<script src="../bower_components/angular-datatables/dist/plugins/scroller/angular-datatables.scroller.js"></script>
+<script src="../bower_components/angular-datatables/dist/plugins/tabletools/angular-datatables.tabletools.js"></script>
+<script src="../bower_components/angular-datatables/dist/plugins/buttons/angular-datatables.buttons.js"></script>
+<script src="../bower_components/angular-datatables/dist/plugins/select/angular-datatables.select.js"></script>
+<script src="../bower_components/tether/dist/js/tether.js"></script>
+<script src="../bower_components/angular-mocks/angular-mocks.js"></script>
+<script src="../bower_components/angular-animate/angular-animate.js"></script>
+<script src="../bower_components/angular-aria/angular-aria.js"></script>
+<script src="../bower_components/angular-messages/angular-messages.js"></script>
+<script src="../bower_components/angular-material/angular-material.js"></script>
+<script src="../bower_components/spin.js/spin.js"></script>
+<script src="../bower_components/angular-spinner/angular-spinner.js"></script>
+<script src="../bower_components/angular-loading-spinner/angular-loading-spinner.js"></script>
+<script src="../bower_components/d3/d3.js"></script>
+<script src="../bower_components/nvd3/build/nv.d3.js"></script>
+<script src="../bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
+<script src="../bower_components/angular-hamburger-toggle/dist/angular-hamburger-toggle.js"></script>
+<script src="../bower_components/leaflet/dist/leaflet-src.js"></script>
+<script src="../bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.js"></script>
+<script src="../bower_components/tinymce/tinymce.js"></script>
+<script src="../bower_components/angular-ui-tinymce/src/tinymce.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
+<!-- inject:js -->
+<script src="app/components/viewroutes/viewroutes.module.js"></script>
+<script src="app/components/viewroutes/viewroutes/viewroutes.controller.js"></script>
+<script src="app/components/viewroutes/viewroutes/viewroutes.component.js"></script>
+<script src="app/components/viewroutes/viewroutes/modalController.js"></script>
+<script src="app/components/viewroutes/edit/edit.controller.js"></script>
+<script src="app/components/viewroutes/edit/edit.compoment.js"></script>
+<script src="app/components/accountlogs/accountlogs.module.js"></script>
+<script src="app/components/accountlogs/view/view.controller.js"></script>
+<script src="app/components/manageuser/manageuser.module.js"></script>
+<script src="app/components/accountlogs/view/view.compoment.js"></script>
+<script src="app/components/accountlogs/accountlogs/accountlogs.controller.js"></script>
+<script src="app/components/accountlogs/accountlogs/accountlogs.component.js"></script>
+<script src="app/components/profile/profile.module.js"></script>
+<script src="app/components/profile/view/view.controller.js"></script>
+<script src="app/components/profile/view/view.compoment.js"></script>
+<script src="app/components/profile/profile/profile.controller.js"></script>
+<script src="app/components/profile/profile/profile.component.js"></script>
+<script src="app/components/profile/edit/edit.controller.js"></script>
+<script src="app/components/profile/edit/edit.compoment.js"></script>
+<script src="app/components/profile/delete/delete.controller.js"></script>
+<script src="app/components/profile/delete/delete.compoment.js"></script>
+<script src="app/components/profile/create/create.controller.js"></script>
+<script src="app/components/profile/create/create.compoment.js"></script>
+<script src="app/components/manageuser/manageuser/manageuser.controller.js"></script>
+<script src="app/components/manageuser/manageuser/manageuser.component.js"></script>
+<script src="app/components/manageuser/view/view.controller.js"></script>
+<script src="app/components/manageuser/view/view.compoment.js"></script>
+<script src="app/components/manageuser/edit/edit.controller.js"></script>
+<script src="app/components/manageuser/edit/edit.compoment.js"></script>
+<script src="app/components/manageuser/delete/delete.controller.js"></script>
+<script src="app/components/manageuser/delete/delete.compoment.js"></script>
+<script src="app/components/manageuser/create/create.controller.js"></script>
+<script src="app/components/manageuser/create/create.compoment.js"></script>
+<script src="app/components/editprofile/editprofile.module.js"></script>
+<script src="app/components/editprofile/editprofile/editprofile.controller.js"></script>
+<script src="app/components/editprofile/editprofile/editprofile.component.js"></script>
+<script src="app/components/dashboard/dashboard.module.js"></script>
+<script src="app/components/dashboard/dashboard/dashboard.controller.js"></script>
+<script src="app/components/dashboard/dashboard/dashboard.component.js"></script>
+<script src="app/components/changepassword/changepassword.module.js"></script>
+<script src="app/components/changepassword/changepassword/changepassword.controller.js"></script>
+<script src="app/components/changepassword/changepassword/changepassword.component.js"></script>
+<script src="app/components/auth/auth.module.js"></script>
+<script src="app/components/auth/register/register.controller.js"></script>
+<script src="app/components/auth/register/register.component.js"></script>
+<script src="app/components/auth/login/login.controller.js"></script>
+<script src="app/components/auth/login/login.component.js"></script>
+<script src="app/components/auth/country.service.js"></script>
+<script src="app/components/auth/auth.service.js"></script>
+<script src="app/components/components.module.js"></script>
+<script src="app/components/components.controller.js"></script>
+<script src="app/common/common.module.js"></script>
+<script src="app/common/sidebar.controller.js"></script>
+<script src="app/common/sidebar.component.js"></script>
+<script src="app/common/modalController.js"></script>
+<script src="app/common/core.controller.js"></script>
+<script src="app/common/core.component.js"></script>
+<script src="app/common/app-nav.controller.js"></script>
+<script src="app/common/app-nav.component.js"></script>
+<script src="app/app.module.js"></script>
+<script src="app/headerInterceptor.service.js"></script>
+<script src="app/app.component.js"></script>
+<!-- endinject -->
+
+<!-- inject:partials -->
+<!-- angular templates will be automatically converted in js and inserted here -->
+<!-- endinject -->
+<!-- endbuild -->
+
+</html>

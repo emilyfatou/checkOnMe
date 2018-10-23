@@ -1,0 +1,1 @@
+This is the Android part of the CheckOnMe project.

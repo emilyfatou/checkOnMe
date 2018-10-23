@@ -1,0 +1,25 @@
+'use strict'
+angular.module('components',[])//if we dont use "[]" it means we are calling "components" module
+.run([function(){
+    console.log('components run');
+}])
+.filter('searchCity', function() {
+
+ 
+  return function(population) {
+
+    var filtered = [];
+    var num1= "1,000,000.00";
+    
+    angular.forEach(population, function(name) {
+
+      if (population > num1) {
+        filtered.push(name)
+      }
+      
+    })
+
+    return filtered;
+  }
+
+});

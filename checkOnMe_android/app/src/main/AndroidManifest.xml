@@ -1,0 +1,55 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.romha.checkonme">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <service
+            android:name=".services.FetchAddressIntentService"
+            android:exported="false"/>
+
+        <activity android:name=".SplashActivity" android:theme="@style/AppTheme.FULL_SCREEN">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".LoginActivity" android:theme="@style/AppTheme.FULL_SCREEN"></activity>
+        <activity android:name=".SignUpActivity" android:theme="@style/AppTheme.FULL_SCREEN"></activity>
+        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".EditProfile"></activity>
+        <activity android:name=".EmergencyContacts"></activity>
+        <activity android:name=".MessageActivity">
+
+        </activity>
+        <activity android:name=".HumanInterface"></activity>
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".MessageViewActivity" />
+        <activity android:name=".ChangePassword" />
+        <activity android:name=".ViewProfile" />
+        <activity android:name=".FullMessage" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".VerificationCodeActivity" />
+        <activity android:name=".HumanInterfaceTest"></activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="01642d852cd51125bc68d3ebe07b0ad903307b3e" />
+    </application>
+
+</manifest>

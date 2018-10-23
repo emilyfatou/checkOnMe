@@ -1,0 +1,1 @@
+"use strict";angular.module("components",[]).run([function(){console.log("components run")}]).filter("searchCity",function(){return function(n,o){var u=[];return angular.forEach(n,function(n){n.population<o&&u.push(n)}),u}});

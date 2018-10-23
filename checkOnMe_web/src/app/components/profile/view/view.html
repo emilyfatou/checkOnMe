@@ -1,0 +1,27 @@
+
+<div class="modal-header" data-backdrop="static">
+  <h3 class="modal-title" id="modal-title">club: {{$ctrl.club.club_name}}</h3>
+</div>
+
+<div class="modal-body" id="modal-body">
+                           <!--<div>{{$ctrl.club.club_name}}</div>
+                          <div>{{$ctrl.club.nick_name}}</div>
+                          <div>{{$ctrl.club.manager}}</div>
+                          <div>{{$ctrl.club.chairperson}}</div>
+                          <div>{{$ctrl.club.adress.country}}</div>
+                          <div>{{$ctrl.club.adress.city}}</div>
+                          <div>{{$ctrl.club.adress.website}}</div>-->
+                          
+                         <div>{{$ctrl.profile.first_name}}</div>
+                          <div>{{$ctrl.profile.last_name}}</div>
+                          <div>{{$ctrl.profile.email}}</div>
+                          <div>{{$ctrl.profile.date_of_birth}}</div>
+                          <div>{{$ctrl.profile.city}}</div>
+                          <div>{{$ctrl.profile.country}}</div>
+                          <div>{{$ctrl.profile.gender}}</div>
+                          <div>{{$ctrl.profile.bio}}</div>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">OK</button>
+  <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+</div>

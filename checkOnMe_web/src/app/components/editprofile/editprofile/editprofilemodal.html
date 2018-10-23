@@ -1,0 +1,29 @@
+<div class="modal-header">
+    <h3 class="modal-title" id="modal-title">Edit Profile Mine</h3>
+</div>
+<div id="infosuccess" hidden>
+   <span class="label label-success" class="col-md-4">Operation Successfully</span>
+</div>
+<div id="infofail" hidden>
+   <span class="label label-warning" class="col-md-4">Operation Failed</span>
+</div>
+<div class="modal-body" id="modal-body">
+    <form name="userEditForm">
+        <div class="form-group">
+            <label for="userEmail">Email</label>
+            <input type="email" class="form-control" id="userEmail" placeholder="Email" ng-model="$ctrl.userv.user.email">
+        </div>
+        <div class="form-group">
+            <label for="userName">Name</label>
+            <input type="text" class="form-control" id="userName" placeholder="Your Name" ng-model="$ctrl.userv.user.profile.first_name">
+        </div>
+        <div class="form-group">
+            <label for="userAge">Agesss</label>
+            <input type="text" class="form-control" id="userAge" placeholder="Your Age please!" ng-model="$ctrl.userv.user.profile.last_name">
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">OK</button>
+    <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+</div>

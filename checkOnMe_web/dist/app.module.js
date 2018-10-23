@@ -1,0 +1,1 @@
+"use strict";angular.module("mainApp",["components"]).config([function(){console.log("Configration block")}]).run([function(){console.log("run block")}]);

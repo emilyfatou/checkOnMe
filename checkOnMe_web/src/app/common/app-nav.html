@@ -1,0 +1,89 @@
+<script src="assets/common-scripts.js"></script>
+<script class="include" type="text/javascript" src="assets/jquery.dcjqaccordion.2.7.js"></script>
+ <section id="container" >
+<header class="header black-bg">
+    <div class="sidebar-toggle-box">
+        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+    </div>
+    <!--logo start-->
+    <a href="#" class="logo"><b>Check On Me Admin</b></a>
+    <!--logo end-->
+    <ul class="nav pull-right top-menu tomakevisible">
+        <li>
+             <div class="menu-demo-container" layout-align="center center" layout="column">
+                <md-menu>
+                    <md-button class="md-icon-button" ng-click="$mdMenu.open()">
+                        <md-icon md-menu-origin class="material-icons redish">more_vert</md-icon>
+                    </md-button>
+                    <md-menu-content width="2">
+                        <md-menu-item>
+                            <md-button >
+                                <md-icon md-menu-origin class="material-icons"></md-icon>
+                                
+                            </md-button>
+                        </md-menu-item>
+                        <md-menu-item>
+                            <md-button ng-click="$ctrl.edit('md',user)">
+                                <md-icon md-menu-origin class="material-icons">edit</md-icon>
+                                Edit Profile
+                            </md-button>
+                        </md-menu-item>
+                        <md-menu-divider></md-menu-divider>
+                        <md-menu-item>
+                            <md-button ng-click="$ctrl.changepassword('md',user)">
+                                <md-icon md-menu-origin class="material-icons">edit</md-icon>
+                                Change Password
+                            </md-button>
+                        </md-menu-item>
+                        <md-menu-divider></md-menu-divider>
+                        <md-menu-item>
+                            <md-button ng-click="$ctrl.logout()">
+                                <md-icon md-menu-origin class="material-icons">exit_to_app</md-icon>
+                                Logout
+                            </md-button>
+                        </md-menu-item>
+                    </md-menu-content>
+                </md-menu>
+            </div>
+         </li>
+      </ul>
+</header>
+</div>
+<aside>
+    <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+           <p class="centered">
+                <!--<a href="profile.html"><img src="assets/img/ui-sherman.jpg" class="img-circle" width="60"></a>-->
+            </p>
+            <h5 class="centered">{{$ctrl.userv.user.email}}</h5>
+                <li class="sub-menu">
+                    <a class="active" ui-sref="dashboard">
+                        <i class="fa fa-dashboard"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="sub-menu">
+                    <a ui-sref="viewroutes">
+                        <i class="glyphicon glyphicon-map-marker"></i>
+                        <span>Locations</span>
+                    </a>
+                </li>
+                <li class="sub-menu">
+                    <a ui-sref="manageuser">
+                        <i class="fa fa-user"></i>
+                        <span>Manage Users</span>
+                    </a>
+                </li>
+                <li class="sub-menu">
+                    <a ui-sref="accountlogs">
+                        <i class="fa fa-history"></i>
+                        <span>Account Logs</span>
+                    </a>
+                 </li>
+                
+         </ul>
+        <!-- sidebar menu end-->
+    </div>
+</aside>
+</section>

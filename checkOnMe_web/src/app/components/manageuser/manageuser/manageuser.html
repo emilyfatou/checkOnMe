@@ -1,0 +1,64 @@
+
+ <div class="col-lg-12 main-chart">
+    <h1 class="page-title">Manage User Profiles</h1>
+      <div class="panel-body">
+          <div id="infosuccess" hidden>
+             <span class="label label-success" class="col-md-4">Operation Successfully</span>
+          </div>
+          <div id="infofail" hidden>
+            <span class="label label-warning" class="col-md-4">Operation Failed</span>
+          </div>
+          <span us-spinner="{radius:30, width:8, length: 16}"></span>
+            <!--<button class="glyphicon glyphicon-plus" ng-click="$ctrl.createUser('md')"></button>-->
+               
+                  <table class="table table-striped" id="tableToExport" datatable="ng">
+                    <div class="row">
+                      <div class="col-xs-6 col-sm-4"><span>Create Admin</span>
+                       <md-button class="md-fab md-mini" aria-label="Eat cake" ng-click="$ctrl.createAdminUser('md')">
+                      <md-icon md-menu-origin class="material-icons">add_circle</md-icon>
+                    </md-button>
+                    </div>
+                      <div class="col-xs-6 col-sm-4"></div>
+                      <div class="clearfix visible-xs-block"></div>
+                      <div class="col-xs-6 col-sm-4">
+                        <span>Generate Report</span>
+                         <md-button class="md-fab md-mini" aria-label="Eat cake" ng-click="exportToExcel('#tableToExport')">
+                        <md-icon md-menu-origin class="material-icons">import_export</md-icon>
+                       </md-button>
+                      </div>
+                    </div>
+                    
+                    
+                    
+                    
+                        <!--<button class="btn btn-link" ng-click="exportToExcel('#tableToExport')">
+                          <span class="glyphicon glyphicon-share"></span>
+                          Export to Excel
+                        </button>-->
+                      <thead>
+                        <tr>
+                          <td>First Name</td>
+                          <td>Last Name</td>
+                          <td>Phone Number</td>
+                          <td>Options</td>
+                         </tr>
+                      </thead>
+                        <tbody>
+                          <tr ng-repeat="user in $ctrl.users">
+                           
+                            <td>{{user.first_name}}</td>
+                            <td>{{user.last_name}}</td>
+                            <td>{{user.phone_number}}</td>
+                            
+                            <td>
+                                <button class="btn btn-info glyphicon glyphicon-eye-open" ng-click="$ctrl.view('md',user)"></button>
+                                <button class="btn btn-primary glyphicon glyphicon-edit" ng-click="$ctrl.edit('md',user)"></button>
+                                <button class="btn btn-danger glyphicon glyphicon-trash" ng-click="$ctrl.delete('md',user)"></button>
+                            </td>
+                          </tr>
+                      </tbody>
+                 </table>
+            </div>
+       </div>
+</div>
+
